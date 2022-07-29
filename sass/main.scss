@@ -1,5 +1,7 @@
-
-
-@import "general";
-@import "normalize";
-@import "block/index";
+@import "./general";
+@import "./normalize";
+@import "./variables";
+@import "./mixins";
+@import "./font";
+/*block*/
+@import "./block/block";
