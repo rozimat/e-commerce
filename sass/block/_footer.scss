@@ -1,0 +1,26 @@
+.footer{
+    &__lists{
+        display: flex;
+        justify-content: space-between;
+        &__list{
+           &__item{
+            margin-top: 16px;
+            &__link{
+                color: $green;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 19px;
+                text-decoration: none;
+            }
+           }
+        }
+    }
+}
+
+.fchild{
+    margin-top: 0px;
+    color: $black;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+}
