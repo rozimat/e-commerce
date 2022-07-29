@@ -322,6 +322,7 @@ template {
 .footer__lists {
   display: flex;
   justify-content: space-between;
+  margin-top: 64px;
 }
 .footer__lists__list__item {
   margin-top: 16px;
@@ -332,6 +333,38 @@ template {
   font-size: 14px;
   line-height: 19px;
   text-decoration: none;
+  font-family: "Open Sans";
+}
+.footer .tags__heading {
+  margin-top: 48px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  color: #151515;
+  font-family: "Poppins";
+}
+.footer .tags__wrapper {
+  margin-top: 16px;
+}
+.footer .tags__wrapper__link {
+  text-decoration: none;
+  padding: 4px 10px;
+  background-color: #F5F5F5;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  color: #151515;
+  margin-right: 16px;
+  font-family: "Poppins";
+}
+.footer .tags__copyright {
+  margin-top: 52px;
+  margin-bottom: 64px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  font-family: "Open Sans";
 }
 
 .fchild {
@@ -340,4 +373,5 @@ template {
   font-weight: 600;
   font-size: 18px;
   line-height: 27px;
+  font-family: "Poppins";
 }/*# sourceMappingURL=main.css.map */
