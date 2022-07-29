@@ -1,0 +1,134 @@
+.header {
+  display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	
+	
+
+}
+.header__top{
+  border-bottom: 1px solid rgba(21, 21, 21, 0.05);
+}
+
+.header__info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 0px;
+}
+
+.header__info-left a {
+  margin-right: 33px;
+}
+
+.header__info-right a {
+  margin-left: 38px;
+}
+
+.info__link {
+  color: #6a983c;
+}
+
+.color__black {
+  color: #151515;
+}
+
+.header__default {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 40px;
+  padding-bottom: 48px;
+}
+
+.header__default-box {
+  display: flex;
+  align-items: center;
+}
+
+.img__logo {
+  padding: 16px 0;
+  width: 177px;
+}
+
+.icon img {
+  margin-left: 38px;
+}
+
+.header__form {
+	display: flex;
+	align-items: center;
+	flex-grow: 1;
+  font-weight: 700;
+	background: $grey;
+	border: 1px solid $light-grey;
+	border-radius: 12px;
+	padding: 10px 0;
+	margin-left: 158px;
+	margin-right: 248px;
+}
+
+.header__form-link {
+	display: flex;
+	align-items: center;
+	@include poppins(700, 15px, 22px);
+	padding-right: 24px;
+	padding-left: 16px;
+	border-right: 1px solid $light-grey;
+  border-top:none;
+  border-bottom: none;
+  border-left: none;
+  background-color:$grey;
+  outline: none;
+	color: $black;
+
+	&::after {
+		content: '';
+		display: block;
+		width: 16px;
+		height: 16px;
+		margin-left: 8px;
+		background-image: url(./../images/chevron-down.svg);
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: center;
+	}
+}
+.header__label {
+	display: flex;
+	align-items: center;
+	flex-grow: 1;
+	position: relative;
+
+	&::after {
+		content: '';
+		display: block;
+		width: 16px;
+		height: 16px;
+		margin-right: 16px;
+		margin-left: 10px;
+		background-image: url(./../images/search.svg);
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: center;
+		position: absolute;
+		right: 0;
+	}
+}
+.header__input {
+	display: flex;
+	align-items: center;
+	flex-grow: 1;
+	margin-left: 12px;
+	padding-left: 12px;
+	padding-right: 12px;
+	margin-right: 32px;
+	border: none;
+	outline: none;
+	background-color: transparent;
+
+	&::placeholder {
+		@include opensans(400, 14px, 19px);
+		color: $placeholder-color;
+	}
+}

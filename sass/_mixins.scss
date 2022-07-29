@@ -1,20 +1,13 @@
-@mixin button {
-  padding: 14px 39px;
-  color: $fff;
-  background-color: $yellow;
-  font-weight: 700;
-  font-size: 15px;
-  line-height: 25px;
-  font-family: $mono;
-  transition: all 0.1s ease;
-
-  &:hover {
-     background-color: white;
-     color: $yellow;
-     box-shadow: inset 0 0 0 3px $yellow;
-  }
-
-  &:active {
-     background-color: $lightyellow;
-  }
+@mixin poppins($weight: 400, $size: 16px, $height: 20px, $color: $black) {
+	font-weight: $weight;
+	font-size: $size;
+	line-height: $height;
+	color: $color;
+}
+@mixin opensans($weight: 400, $size: 16px, $height: 20px, $color: $black) {
+	font-family: 'Open Sans';
+	font-weight: $weight;
+	font-size: $size;
+	line-height: $height;
+	color: $color;
 }

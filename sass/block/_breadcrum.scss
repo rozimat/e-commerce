@@ -1,0 +1,32 @@
+.breadcrum{
+  max-width: 1260px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 0;
+  position: relative;
+  &__item{
+    position: relative;
+    margin-right: 21px;
+    &--link{
+      position: relative;
+      color: $black;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 16px;
+    }
+    &--link:nth-last-child(3){
+      margin-right: 0;
+    }
+    &--link:hover{
+      color: $placeholder-color;
+    }
+    &--link:active{
+      color: $placeholder-color; 
+    }
+    &--link:checked + link {
+      color: $placeholder-color;
+    }
+  }
+}
