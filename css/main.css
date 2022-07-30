@@ -503,6 +503,12 @@ template {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
 .nav__item + .nav__item {
@@ -578,5 +584,34 @@ template {
 
 .breadcrum__item--link:checked + link {
   color: #a9a9a9;
+}
+
+.footer__lists {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer__lists__list__item {
+  margin-top: 16px;
+}
+
+.footer__lists__list__item__link {
+  color: #6a983c;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  text-decoration: none;
+}
+
+.fchild {
+  margin-top: 0px;
+  color: #151515;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
 }
 /*# sourceMappingURL=main.css.map */
