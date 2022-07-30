@@ -1,7 +1,9 @@
 .footer{
-    &__lists{
+
+    &__lists{  
         display: flex;
         justify-content: space-between;
+        margin-top: 64px;
         &__list{
            &__item{
             margin-top: 16px;
@@ -11,8 +13,45 @@
                 font-size: 14px;
                 line-height: 19px;
                 text-decoration: none;
+                font-family: $open;
             }
            }
+        }
+    }
+
+    .tags{
+        &__heading{
+            margin-top: 48px;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 27px;
+            color: $black;
+            font-family: $poppin;
+        }
+        &__wrapper{
+            margin-top: 16px;
+            &__link{
+                text-decoration: none;
+                padding: 4px 10px;
+                background-color: $gray;
+                border-radius: 12px;
+                font-weight: 600;
+                font-size: 12px;
+                line-height: 18px;
+                color: $black;
+                margin-right: 16px;
+                font-family: $poppin;
+                
+            }
+           
+        }
+        &__copyright{
+            margin-top: 52px;
+            margin-bottom: 64px;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 19px;
+            font-family: $open;
         }
     }
 }
@@ -23,4 +62,5 @@
     font-weight: 600;
     font-size: 18px;
     line-height: 27px;
+    font-family: $poppin;
 }
